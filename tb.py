@@ -110,6 +110,9 @@ if __name__ == '__main__':
     #         e_ori[i][j] -= 5.3072
     # for i in range(len(k_ori)):
     #     ax.plot(k_ori[i], e_ori[i], c='gray')
+    # for i in range(len(e_ori)):
+    #     e_ori[i] -= 5.3072
+    # ax.scatter(k_ori, e_ori, c='gray',s=1)
 
     # plot HSE bandstructure
     # d_ori = []
@@ -125,7 +128,6 @@ if __name__ == '__main__':
     #     if len(d_ori[i][0].split()) != 1:
     #         k_ori.append(float(d_ori[i][0].split()[0]))
     #         e_ori.append(float(d_ori[i][0].split()[1]))
-
     # for i in range(len(e_ori)):
     #     e_ori[i] -= 5.3072
     # ax.scatter(k_ori, e_ori, c='gray',s=1)
