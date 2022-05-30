@@ -82,3 +82,50 @@ if __name__ == '__main__':
     # ax.set_xlim(k_node[0],k_node[-1])
     # ax.set_ylim(-2, 2)
     # fig.savefig("band.png")
+    
+    # plot PBE bandstructure
+    # d_ori = []
+    # k_ori = []
+    # e_ori = []
+    # with open('eigen1.csv', 'r') as f:
+    #     csv_reader = csv.reader(f)
+    #     for row in list(csv_reader):
+    #         d_ori.append(row)
+    # d_ori = d_ori[:-3]
+    # k_tmp = []
+    # e_tmp = []
+    # for i in range(len(d_ori)):
+    #     if d_ori[i] != ['1']:
+    #         k_tmp.append(float(d_ori[i][0].split()[0]))
+    #         e_tmp.append(float(d_ori[i][0].split()[1]))
+    #     else:
+    #         k_ori.append(k_tmp)
+    #         e_ori.append(e_tmp)
+    #         k_tmp = []
+    #         e_tmp = []
+    #
+    #
+    # for i in range(len(e_ori)):
+    #     for j in range(len(e_ori[i])):
+    #         e_ori[i][j] -= 5.3072
+    # for i in range(len(k_ori)):
+    #     ax.plot(k_ori[i], e_ori[i], c='gray')
+
+    # plot HSE bandstructure
+    # d_ori = []
+    # k_ori = []
+    # e_ori = []
+    # with open('hse1.csv', 'r') as f:
+    #     csv_reader = csv.reader(f)
+    #     for row in list(csv_reader):
+    #         d_ori.append(row)
+    # d_ori = d_ori[:-3]
+    #
+    # for i in range(len(d_ori)):
+    #     if len(d_ori[i][0].split()) != 1:
+    #         k_ori.append(float(d_ori[i][0].split()[0]))
+    #         e_ori.append(float(d_ori[i][0].split()[1]))
+
+    # for i in range(len(e_ori)):
+    #     e_ori[i] -= 5.3072
+    # ax.scatter(k_ori, e_ori, c='gray',s=1)
